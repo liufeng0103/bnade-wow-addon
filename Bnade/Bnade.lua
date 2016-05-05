@@ -21,10 +21,13 @@ local function OnTooltipSetItem(self)
 	local name, link = self:GetItem()
 	if name then		
 		local itemId = link:match("Hitem:(%d+)")
-		local price = Bnade_data[tonumber(itemId)]
-		if price then
+		local item = Bnade_data[tonumber(itemId)]
+		if item then
+			local price = item[1]
+			local quantity = item[2]
 			GameTooltip:AddLine("BNADE参考价格: " .. MoneyToString(price), 1, 1, 1)
-		end			
+			GameTooltip:AddLine("参考服务器数: " .. quantity .. "/170", 1, 1, 1)
+		end		
 	end	
 end
 GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
