@@ -3,5 +3,7 @@
 ## Notes: BNADE藏宝海湾插件用于获取物品的价格参考
 ## OptionalDeps:
 ## Dependencies:
+## Author: liufeng0103@163.com
+## Version: 1.1.1
 Data.lua
 Bnade.lua
