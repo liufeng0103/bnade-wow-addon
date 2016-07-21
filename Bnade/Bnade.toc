@@ -1,4 +1,4 @@
-## Interface: 60200
+## Interface: 70000
 ## Title: BNADE
 ## Notes: BNADE藏宝海湾插件用于获取物品的价格参考
 ## OptionalDeps:
